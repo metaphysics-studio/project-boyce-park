@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://wfs58hgvb7wm"]
+
+[ext_resource type="PackedScene" uid="uid://duahl2pj8amyp" path="res://entities/base_entity.tscn" id="1_sdqx4"]
+[ext_resource type="Script" path="res://entities/objects/static_object.gd" id="2_8tr1f"]
+
+[node name="StaticObject" instance=ExtResource("1_sdqx4")]
+script = ExtResource("2_8tr1f")

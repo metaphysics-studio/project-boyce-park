@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://do6ymrrv0xl1b"]
+
+[ext_resource type="PackedScene" uid="uid://cb200vrsak7gm" path="res://entities/objects/scenery_object.tscn" id="1_hf16o"]
+[ext_resource type="Script" path="res://entities/objects/small_scenery_object.gd" id="2_4jp1t"]
+
+[node name="SmallSceneryObject" instance=ExtResource("1_hf16o")]
+script = ExtResource("2_4jp1t")
+_quadrant = 0
+_placement_type = 2
+
+[node name="Sprite2D" parent="Sprites" index="0"]
+position = Vector2(16, -24)
+frame = 5

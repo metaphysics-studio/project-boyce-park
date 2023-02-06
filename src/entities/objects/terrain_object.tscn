@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://brehxlehj2ruv"]
+
+[ext_resource type="PackedScene" uid="uid://wfs58hgvb7wm" path="res://entities/objects/static_object.tscn" id="1_n4d4v"]
+[ext_resource type="Texture2D" uid="uid://bao6oa0vdnia3" path="res://assets/test_graphics/test_objects_for_placement.png" id="2_eaq5s"]
+[ext_resource type="Script" path="res://entities/objects/terrain_object.gd" id="2_i8dka"]
+
+[node name="TerrainObject" instance=ExtResource("1_n4d4v")]
+script = ExtResource("2_i8dka")
+_z_level = -1
+
+[node name="VisibilityNotifier" parent="." index="0"]
+position = Vector2(0.999996, 16.5)
+scale = Vector2(6.4, 6.95)
+
+[node name="BaseSprite" type="Sprite2D" parent="Sprites" index="0"]
+position = Vector2(0, 32)
+texture = ExtResource("2_eaq5s")
+hframes = 4
+vframes = 4
